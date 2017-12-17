@@ -1,4 +1,10 @@
-## Code for the first part of the workshop
+## Code for part 1- R Basics
+
+## ----setup, include=FALSE------------------------------------------------
+knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, fig.align = "center")
+
+## ---- echo=FALSE, out.width="15px", fig.align="left"---------------------
+knitr::include_graphics("RStudio-Logo-Blue-Gradient.PNG")
 
 ## ------------------------------------------------------------------------
 1+5+3+7
@@ -8,34 +14,6 @@
 600
 
 "Hello"
-
-## ------------------------------------------------------------------------
-# An example for assignment
-x = 3
-x <- 3
-x 
-
-## ------------------------------------------------------------------------
-# = is used for assignment 
-one = 1
-two = 2
-one = two
-one
-two
-
-# == is used as a condition expression
-one = 1
-two = 2
-one == two
-
-## ------------------------------------------------------------------------
-x = 55
-x
-x = "Hello"
-x
-
-## ------------------------------------------------------------------------
-ls()
 
 ## ------------------------------------------------------------------------
 5+3
@@ -75,13 +53,47 @@ NULL
 1/0
 
 ## ------------------------------------------------------------------------
+# An example for assignment
+x = 3
+x <- 3
+x 
+
+## ------------------------------------------------------------------------
+# = is used for assignment 
+one = 1
+two = 2
+one = two
+one
+two
+
+# == is used as a condition expression
+one = 1
+two = 2
+one == two
+
+## ------------------------------------------------------------------------
+x = 55
+x
+x = "Hello"
+x
+
+## ------------------------------------------------------------------------
+ls()
+
+## ------------------------------------------------------------------------
 1+1 # This is comment
+
+## ---- echo=FALSE, out.width="100px", fig.align="left"--------------------
+knitr::include_graphics("functions_plot.PNG")
 
 ## ------------------------------------------------------------------------
 # dim(x) - x	an R object, 
 # for example a matrix, array or data frame.
 dim(iris)
 
+## ---- eval=FALSE---------------------------------------------------------
+## ?str
+## 
 
 ## ------------------------------------------------------------------------
 dbl_var <- c(1, 2.5, 4.5) # Double
@@ -91,7 +103,7 @@ int_var <- c(1L, 6L, 10L)
 # Use TRUE and FALSE (or T and F) 
 # to create logical vectors
 log_var <- c(TRUE, FALSE, T, F)
-# Character vectors
+# Character\string vectors
 chr_var <- c("these are", "some strings")
 
 
