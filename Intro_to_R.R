@@ -1,11 +1,5 @@
 ## Code for part 1- R Basics
 
-## ----setup, include=FALSE------------------------------------------------
-knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, fig.align = "center")
-
-## ---- echo=FALSE, out.width="15px", fig.align="left"---------------------
-knitr::include_graphics("RStudio-Logo-Blue-Gradient.PNG")
-
 ## ------------------------------------------------------------------------
 1+5+3+7
 
@@ -82,9 +76,6 @@ ls()
 
 ## ------------------------------------------------------------------------
 1+1 # This is comment
-
-## ---- echo=FALSE, out.width="100px", fig.align="left"--------------------
-knitr::include_graphics("functions_plot.PNG")
 
 ## ------------------------------------------------------------------------
 # dim(x) - x	an R object, 
@@ -170,7 +161,6 @@ typeof(dbl_var)
 is.character(dbl_var)
 is.double(dbl_var)
 is.numeric(dbl_var)
-
 
 ## ------------------------------------------------------------------------
 
@@ -279,19 +269,18 @@ df
 
 
 ## ------------------------------------------------------------------------
-dat <- read.csv("D:/Users/shtien/Dropbox/R_workshop/alex/df_example.csv")
+dat <- read.csv("C:/Users/Alex_dawn/Dropbox/R_workshop/alex/df_example.csv")
 
 ## ------------------------------------------------------------------------
 head(dat)
 tail(dat)
 dim(dat)
 
-
 ## ------------------------------------------------------------------------
 summary(dat)
 
 ## ------------------------------------------------------------------------
-setwd("D:/Users/shtien/Dropbox/R_workshop/alex")
+setwd("C:/Users/Alex_dawn/Dropbox/R_workshop/alex")
 getwd()
 dat <- read.csv("df_example.csv")
 
